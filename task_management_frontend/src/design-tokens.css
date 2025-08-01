@@ -1,0 +1,212 @@
+:root {
+  /* Color Palette */
+  --color-f9f8fc: #f9f8fc;
+  --color-e2cfea: #e2cfea;
+  --color-4d4d4d: #4d4d4d;
+  --color-694baf: #694baf;
+  --color-ffffff: #ffffff;
+  --color-2c2c2c: #2c2c2c;
+  --color-a06cd5: #a06cd5;
+  --color-bb8fe9: #bb8fe9;
+  --color-000000: #000000;
+  --color-1a87d7: #1a87d7;
+  --color-707070: #707070;
+  --color-4391ed: #4391ed;
+  --color-c4c4c4: #c4c4c4;
+  --color-eef2f5: #eef2f5;
+  --color-40a737: #40a737;
+  --color-00569e: #00569e;
+  --color-fea946: #fea946;
+  --color-ff2473: #ff2473;
+  --color-18b0ff: #18b0ff;
+  --color-6a6a6a: #6a6a6a;
+  
+  /* Typography - Common font families */
+  --font-mulish: 'Mulish', sans-serif;
+  --font-poppins: 'Poppins', sans-serif;
+
+  /* Typography sizes & weights (examples of main ones) */
+  --typo-header-xl: 55.4px;
+  --typo-header-xl-weight: 800;
+  --typo-header-lg: 45px;
+  --typo-header-lg-weight: 800;
+  --typo-title-lg: 34px;
+  --typo-title-lg-weight: 700;
+  --typo-heading: 24px;
+  --typo-heading-weight: 700;
+  --typo-subheading: 18.3px;
+  --typo-subheading-weight: 600;
+  --typo-body: 16px;
+  --typo-body-weight: 500;
+  --typo-small: 12.9px;
+  --typo-small-weight: 400;
+
+  /* Line-heights and letter spacing (a few samples) */
+  --lh-header-xl: 63.16px;
+  --lh-header-lg: 51.3px;
+  --lh-title-lg: 42.79px;
+  --lh-body: 20.08px;
+  
+  /* Border radii */
+  --radius-xs: 8px;
+  --radius-sm: 10px;
+  --radius-md: 12.5px;
+  --radius-lg: 16.1px;
+  --radius-xl: 20px;
+  --radius-2xl: 28.5px;
+
+  /* Spacing scale (select key spacing values from the system) */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 32px;
+  --space-xl: 64px;
+  --space-card: 20px;
+
+  /* Shadow styles */
+  --shadow-lg: 25px 13px 40px 0px #c4b3f0;
+  --shadow-card: 7px -1px 12px 0px #00000026;
+  --shadow-nav: 5.6px -0.8px 9.7px 0px #00000017;
+}
+
+/* Typography utilities */
+.typo-header-xl {
+  font-family: var(--font-mulish);
+  font-size: var(--typo-header-xl);
+  font-weight: var(--typo-header-xl-weight);
+  line-height: var(--lh-header-xl);
+  color: var(--color-ffffff);
+  margin: 0;
+}
+.typo-header-lg {
+  font-family: var(--font-mulish);
+  font-size: var(--typo-header-lg);
+  font-weight: var(--typo-header-lg-weight);
+  line-height: var(--lh-header-lg);
+  color: var(--color-ffffff);
+  margin: 0;
+}
+.typo-title-lg {
+  font-family: var(--font-mulish);
+  font-size: var(--typo-title-lg);
+  font-weight: var(--typo-title-lg-weight);
+  line-height: var(--lh-title-lg);
+  color: var(--color-2c2c2c);
+  margin: 0;
+}
+.typo-heading {
+  font-family: var(--font-mulish);
+  font-size: var(--typo-heading);
+  font-weight: var(--typo-heading-weight);
+  line-height: 30.12px;
+  color: var(--color-2c2c2c);
+  margin: 0;
+}
+.typo-subheading {
+  font-family: var(--font-mulish);
+  font-size: var(--typo-subheading);
+  font-weight: var(--typo-subheading-weight);
+  line-height: 24.01px;
+  color: var(--color-4d4d4d);
+  margin: 0;
+}
+.typo-body {
+  font-family: var(--font-mulish);
+  font-size: var(--typo-body);
+  font-weight: var(--typo-body-weight);
+  line-height: var(--lh-body);
+  color: var(--color-2c2c2c);
+  margin: 0;
+}
+.typo-label {
+  font-family: var(--font-poppins);
+  font-size: var(--typo-small);
+  font-weight: 500;
+  line-height: 19.36px;
+  color: var(--color-000000);
+  margin: 0;
+}
+.typo-label-grey {
+  font-family: var(--font-poppins);
+  font-size: var(--typo-small);
+  font-weight: 500;
+  line-height: 19.36px;
+  color: var(--color-707070);
+  margin: 0;
+}
+
+/* Card & container backgrounds */
+.card {
+  background: var(--color-ffffff);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-card);
+  padding: var(--space-card);
+}
+
+.section-bg-purple {
+  background: var(--color-694baf);
+}
+.section-bg-grey {
+  background: var(--color-f9f8fc);
+}
+
+/* Spacing utilities */
+.m-0 { margin: 0; }
+.mt-xs { margin-top: var(--space-xs);}
+.mb-xs { margin-bottom: var(--space-xs);}
+.mt-sm { margin-top: var(--space-sm);}
+.mb-sm { margin-bottom: var(--space-sm);}
+.pt-md { padding-top: var(--space-md);}
+.pb-md { padding-bottom: var(--space-md);}
+.p-lg { padding: var(--space-lg); }
+.py-md { padding-top: var(--space-md); padding-bottom: var(--space-md);}
+.px-md { padding-left: var(--space-md); padding-right: var(--space-md);}
+
+/* Radius utilities */
+.rounded { border-radius: var(--radius-xl); }
+.rounded-lg { border-radius: var(--radius-2xl); }
+.rounded-md { border-radius: var(--radius-md); }
+.circle { border-radius: 50%; }
+
+/* Drop shadows */
+.shadow-card { box-shadow: var(--shadow-card); }
+.shadow-lg { box-shadow: var(--shadow-lg);}
+.shadow-nav { box-shadow: var(--shadow-nav); }
+
+/* Layout containers */
+.flex { display: flex; }
+.flex-col { flex-direction: column;}
+.flex-row { flex-direction: row;}
+.items-center { align-items: center;}
+.justify-center { justify-content: center;}
+.space-between { justify-content: space-between; }
+.gap-md { gap: var(--space-md);}
+.gap-lg { gap: var(--space-lg);}
+
+/* Example avatar/badge styling (small colored circles for initials) */
+.avatar-badge {
+  width: 29px; height: 29px;
+  display: flex; align-items: center; justify-content: center;
+  font-family: var(--font-poppins); font-size: 15px; font-weight: 400;
+  border-radius: 50%;
+  background-color: var(--color-00569e);
+  color: var(--color-ffffff);
+}
+
+.bg-green { background-color: var(--color-40a737);}
+.bg-amber { background-color: var(--color-fea946);}
+.bg-pink { background-color: var(--color-ff2473);}
+.bg-purple { background-color: var(--color-694baf);}
+.bg-grey { background-color: var(--color-c4c4c4);}
+.bg-blue { background-color: var(--color-18b0ff);}
+.bg-yellow { background-color: var(--color-fea946);}
+.bg-light { background-color: var(--color-f9f8fc);}
+.bg-white { background-color: var(--color-ffffff);}
+
+/* Utility */
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+.text-purple { color: var(--color-694baf); }
+.text-grey { color: var(--color-707070); }
+.text-black { color: var(--color-000000); }
+.text-white { color: var(--color-ffffff); }
